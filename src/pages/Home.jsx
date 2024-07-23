@@ -6,7 +6,7 @@ import Search from "../components/Search";
 
 const Home = () => {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto px-8">
       <Header />
       <Search />
       <IntroPost />
