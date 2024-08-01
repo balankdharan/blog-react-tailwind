@@ -1,5 +1,5 @@
 const IntroPost = () => {
-  return <div>This is intro post</div>;
+  return <div>This is intro change</div>;
 };
 
 export default IntroPost;
