@@ -1,18 +1,18 @@
+import { useState } from "react";
 import Blogs from "../components/Blogs";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import IntroPost from "../components/IntroPost";
+import Layout from "../components/Layout";
 import Search from "../components/Search";
 
 const Home = () => {
+  const [query, setQuery] = useState("");
+
   return (
-    <div className="max-w-7xl mx-auto px-8">
-      <Header />
-      <Search />
+    <Layout>
+      <Search onSearch={setQuery} />
       <IntroPost />
-      <Blogs />
-      <Footer />
-    </div>
+      <Blogs query={query} />
+    </Layout>
   );
 };
 
